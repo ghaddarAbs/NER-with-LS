@@ -226,6 +226,9 @@ def iob_to_iob2(tags):
 
 
 def main(argv):
+    if not os.path.exists("models"):
+        os.makedirs("models")
+    
     dataset = argv[0]
     config = pyhocon.ConfigFactory.parse_file("experiments.conf")[dataset]
     if dataset == "ontonotes":
