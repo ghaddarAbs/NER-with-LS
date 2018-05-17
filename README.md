@@ -21,11 +21,11 @@ This repository contains the source code for the NER system presented in the fol
 2. Change the `raw_path` variables for [conll](http://www.cnts.ua.ac.be/conll2003/ner/) and [ontonotes](http://conll.cemantix.org/2012/data.html) datasets in `experiments.config` file to `path/to/conll-20003` and `path/to/conll-2012/v4/data` respectively. For conll dataset please rename eng.train eng.testa eng.testb files to conll.train.txt conll.dev.txt conll.test.txt respectively. Then run: 
  
 ```
-$ python preprocess.py dataset_name (conll | ontonotes)
+$ python preprocess.py dataset_name (conll|ontonotes)
 ```
 
 ## Training
 Once the data preprocessing is completed, you can train and test a model:
 ```
-$ python model.py dataset_name (conll | ontonotes)
+$ python model.py dataset_name (conll|ontonotes)
 ```
