@@ -1,6 +1,6 @@
 # NER-with-LS
 
-WiNER: A Wikipedia Annotated Corpus for Named Entity Recognition
+Robust Lexical Features for Improved Neural Network Named-Entity Recognition
 ================================================================
 
 This repository contains the source code for the NER system presented in the following research publication
