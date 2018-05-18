@@ -312,8 +312,9 @@ def train(config):
 
 def get_lstm_dim(config):
     if "ls" not in config["features"]:
-        dim = 100 + 122 + config["cap_dim"]
+        dim = 100 + 122
         if "char" in config["features"]:dim += config["char_filters"]
+        if "caps" in config["features"]:dim += config["cap_dim"]    
         config["lstm_word"] = int((dim * config["lstm_word"])/(dim - 122))
 
     return config
