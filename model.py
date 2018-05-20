@@ -114,8 +114,7 @@ class Model:
         char_input = tf.reshape(self.char_input_data, [-1, config["char_step_num"]])
         char_embedding = tf.get_variable(name="char_embedding",
                                          dtype=tf.float32,
-                                         initializer=tf.random_uniform([config["vocab_char"],  config["char_dim"]],
-                                                                       -0.5, 0.5),
+                                         initializer=tf.random_uniform([config["vocab_char"], config["char_dim"]], -0.5, 0.5),
                                          trainable=True)
 
         char_input = tf.nn.embedding_lookup(char_embedding, char_input)
@@ -131,7 +130,8 @@ class Model:
                                        pool_size=config['char_pool_size'],
                                        strides=config['char_pool_size'])
 
-        output = tf.reshape(pool, shape=[-1, ntime_steps,
+        output = tf.reshape(pool, shape=[-1,
+                                         ntime_steps,
                                          config['char_filters'] * config['char_step_num']//config['char_pool_size']])
 
         return output
