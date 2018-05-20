@@ -1,5 +1,3 @@
-# NER-with-LS
-
 Robust Lexical Features for Improved Neural Network Named-Entity Recognition
 ================================================================
 
