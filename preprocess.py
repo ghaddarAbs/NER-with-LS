@@ -8,7 +8,7 @@ warnings.filterwarnings('ignore')
 
 def dump_ner_data(config, dataset):
 
-    raw_data = joblib.load(config["data_path"])
+    raw_data = joblib.load(config["data_path"].replace("_with_data",""))
     word_to_id = raw_data["word_to_id"]
     tag_to_id = raw_data["tag_to_id"]
 
@@ -19,7 +19,7 @@ def dump_ner_data(config, dataset):
     raw_data["data"] = data
 
     # write the data and mapping
-    with open("data/" + dataset + ".joblib", 'wb') as fp:
+    with open(config["data_path"], 'wb') as fp:
         joblib.dump(raw_data, fp)
 
 
