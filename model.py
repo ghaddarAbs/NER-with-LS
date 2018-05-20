@@ -324,6 +324,9 @@ def main(argv):
     config = pyhocon.ConfigFactory.parse_file("experiments.conf")[argv[0]]
     config["lr_decay"] = config["lr"] / config["max_max_epoch"]
     config = get_lstm_dim(config)
+    if not os.path.exists("models"):
+        os.makedirs("models")
+        
     train(config)
 
 
