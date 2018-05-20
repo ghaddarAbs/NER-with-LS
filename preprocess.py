@@ -238,6 +238,7 @@ def main(argv):
         [create_conll_raw(config["raw_path"], p) for p in config["portion"]]
     else:
         print("Unknown dataset")
+        sys.exit(1)
 
     dump_ner_data(config, dataset)
 
