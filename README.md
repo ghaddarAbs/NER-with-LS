@@ -25,7 +25,7 @@ $ python preprocess.py dataset_name (conll|ontonotes)
 ```
 
 ## Training
-Once the data preprocessing is completed, you can train and test a model:
+Once the data preprocessing is completed, you can train and test a model with:
 ```
 $ python model.py dataset_name (conll|ontonotes)
 ```
