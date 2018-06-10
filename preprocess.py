@@ -82,7 +82,7 @@ def lst_to_array(words, tags, max_sent_len):
 ############### Ontonotes to IOB2 #################
 ###################################################
 def create_onto_raw(raw_path, portion):
-    datafile = os.path.join(raw_path , portion , "/data/english/annotations/")
+    datafile = os.path.join(raw_path , portion) + "/data/english/annotations/"
     files = [y for x in os.walk(datafile) for y in glob(os.path.join(x[0], '*_gold_conll'))]
 
     words = []
