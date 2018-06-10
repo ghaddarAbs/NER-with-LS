@@ -217,7 +217,7 @@ def iob_to_iob2(tags):
     prev = "O"
 
     for i in range(len(tags)):
-        tag = tags[i].replace("B-", "").replace("I-", "")
+        tag = re.sub(r'^B-|^I-', '',  tags[i])
         if tags[i].startswith("I-") and not prev.endswith("-"+tag):
             tags[i] = "B-"+tag
         prev = tags[i]
