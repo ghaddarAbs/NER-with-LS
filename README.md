@@ -9,7 +9,7 @@ This repository contains the source code for the NER system presented in the fol
 
 ## Requirements
 
-* python 3.6.3
+* python 3.6
 * tensorflow 1.6
 * pyhocon (for parsing the configurations)
 
