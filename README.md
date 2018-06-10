@@ -21,11 +21,11 @@ This repository contains the source code for the NER system presented in the fol
 3. Run: 
  
 ```
-$ python preprocess.py dataset_name (conll|ontonotes)
+$ python preprocess.py dataset_name [conll|ontonotes]
 ```
 
 ## Training
 Once the data preprocessing is completed, you can train and test a model with:
 ```
-$ python model.py dataset_name (conll|ontonotes)
+$ python model.py dataset_name [conll|ontonotes]
 ```
