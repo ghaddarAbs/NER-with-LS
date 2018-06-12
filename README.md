@@ -1,7 +1,7 @@
 Robust Lexical Features for Improved Neural Network Named-Entity Recognition
 ================================================================
 
-This repository contains the source code for the NER system presented in the following research publication ([tmp link](https://arxiv.org/submit/2291406/view))
+This repository contains the source code for the NER system presented in the following research publication ([tmp link](https://arxiv.org/pdf/1806.03489.pdf))
 
     Abbas Ghaddar and Philippe Langlais 
     "Robust Lexical Features for Improved Neural Network Named-Entity Recognition",
