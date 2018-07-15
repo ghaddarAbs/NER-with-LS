@@ -50,7 +50,6 @@ class Batcher:
         return data
 
     def iterator(self):
-        # print (len(self.data))
         for j in range(0, len(self.data), self.batch_size):
             f, t = j, j + self.batch_size
             if t > len(self.data):
