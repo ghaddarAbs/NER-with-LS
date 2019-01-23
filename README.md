@@ -1,11 +1,11 @@
 Robust Lexical Features for Improved Neural Network Named-Entity Recognition
 ================================================================
 
-This repository contains the source code for the NER system presented in the following research publication ([tmp link](https://arxiv.org/pdf/1806.03489.pdf))
+This repository contains the source code for the NER system presented in the following research publication ([link](http://aclweb.org/anthology/C18-1161))
 
     Abbas Ghaddar and Philippe Langlais 
-    "Robust Lexical Features for Improved Neural Network Named-Entity Recognition",
-    To appear in COLING 2018
+    Robust Lexical Features for Improved Neural Network Named-Entity Recognition
+    In Proceedings of the 27th International Conference on Computational Linguistics (COLING 2018)
 
 ## Requirements
 
@@ -28,4 +28,19 @@ $ python preprocess.py dataset_name[conll|ontonotes]
 Once the data preprocessing is completed, you can train and test a model with:
 ```
 $ python model.py dataset_name[conll|ontonotes]
+```
+
+## Citation
+
+Please cite the following paper when using our code: 
+
+```
+@InProceedings{ghaddar2018coling,
+  title={Robust Lexical Features for Improved Neural Network Named-Entity Recognition},
+  author={Ghaddar, Abbas	and Langlais, Phillippe},
+  booktitle = {{COLING} 2018, 27th International Conference on Computational Linguistics},
+  pages     = {1896--1907},
+  year      = {2018}
+}
+
 ```
