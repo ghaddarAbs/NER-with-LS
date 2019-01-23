@@ -37,7 +37,7 @@ Please cite the following paper when using our code:
 ```
 @InProceedings{ghaddar2018coling,
   title={Robust Lexical Features for Improved Neural Network Named-Entity Recognition},
-  author={Ghaddar, Abbas	and Langlais, Phillippe},
+  autor={Ghaddar, Abbas	and Langlais, Phillippe},
   booktitle = {{COLING} 2018, 27th International Conference on Computational Linguistics},
   pages     = {1896--1907},
   year      = {2018}
