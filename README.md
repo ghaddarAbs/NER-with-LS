@@ -21,13 +21,13 @@ This repository contains the source code for the NER system presented in the fol
 3. Run: 
  
 ```
-$ python preprocess.py dataset_name[conll|ontonotes]
+$ python preprocess.py {conll|ontonotes}
 ```
 
 ## Training
 Once the data preprocessing is completed, you can train and test a model with:
 ```
-$ python model.py dataset_name[conll|ontonotes]
+$ python model.py {conll|ontonotes}
 ```
 ## Generate LS embeddings
 The following [link](https://drive.google.com/open?id=1izVa6Wm-S9pWMqLMo0wXqLf9JJhak_vY) contains the model, entity type vocab and code to generate LS embeddings for any word.
