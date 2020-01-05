@@ -30,7 +30,7 @@ Once the data preprocessing is completed, you can train and test a model with:
 $ python model.py {conll|ontonotes}
 ```
 ## Generate LS embeddings
-The following [link](https://drive.google.com/open?id=1izVa6Wm-S9pWMqLMo0wXqLf9JJhak_vY) contains the model, entity type vocab and code to generate LS embeddings for any word.
+The following [link](https://drive.google.com/open?id=1kmsy7GXI4ADpvhwKaJW_LZp1xFmJ0Qa4) contains the model, entity type vocab and code to generate LS embeddings for any word.
 
 ## Citation
 
